@@ -14,93 +14,37 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: var(--fontedetalhe);
 }
 
-p {
-    padding: 10px;
-}
 
 header {
     background-color: black;
-    min-height: 260px;
-
+    color: white;
+    text-align: center;
 }
 
-header p {
-    color: white;
-    font-family: var(--fontedetalhe);
-    text-align: center;
-    padding-top: 5px;
-}
-
-header h1 {
-    color: white;
-    font-family: var(--fontetitulo);
-    font-weight: bold;
-    font-size: 8em;
-    font-style: normal;
-    text-align: center;
-    font-variant: small-caps;
+header > h1 {
     padding-top: 50px;
+    font-size: 8vw;
+    font-family: var(--fontetitulo);
+    
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
 }
 
 header a {
-    color: white;
+    font-weight: bolder;
     text-decoration: none;
-    font-weight: bold;
+    color: white;
 }
 
 header a:hover {
     text-decoration: underline;
 }
-
-article {
-    padding: 30px;
-}
-
-article p {
-    font-family: var(--fontetexto);
-    font-size: 3em;
-    line-height: 2em;
-
-}
-
-article.conteudo {
-    max-width: 550px;
-    min-width: 50px
-}
-
-article.conteudo-img {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.507);
-    max-width: 500px;
-    min-width: 100px;
-}
-
-section {
-    min-height: 900px;
-    padding: 40px 10px 0px 40px;
-}
-
-section#img1 {
-    height: 100vh;
-    background-image: url(../imagens/background001.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-section#img2 {
-    height: 100hv;
-    background-image: url('../imagens/background002.jpg');
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    background-attachment: fixed;
-    margin-top: 20px;
-}
-
 
 footer {
     background-color:  black;
@@ -108,6 +52,54 @@ footer {
     text-align: center;
     font-family: var(--fontedetalhe);
     padding: 5px;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+section > p {
+    font-family: var(--fontetexto);
+    font-size: 3.5vw;
+    padding-left: 30px;
+}
+
+section.conteudo {
+    color: black;
+}
+
+section.conteudo-img {
+    background-color: rgb(59, 58, 58);
+    color: white;
+}
+
+section.conteudo-img > p {
+    background-color: rgba(0, 0, 0, 0.212);
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+section#img1 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+section#img2 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer {
+    font-size: 16px;
 }
 
 footer a {
