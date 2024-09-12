@@ -75,7 +75,8 @@ section.conteudo-img {
 }
 
 section.conteudo-img > p {
-    background-color: rgba(0, 0, 0, 0.212);
+    background-color: rgba(0, 0, 0, 0.192);
+    backdrop-filter: blur(5px);
     display: inline-block;
     margin-left: 20px;
     padding: 10px;
